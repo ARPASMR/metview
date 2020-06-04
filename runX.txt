@@ -1,0 +1,6 @@
+# disable xauth
+xhost +
+
+# Run metview with GUI
+docker run -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY="$DISPLAY" metview metview
+
